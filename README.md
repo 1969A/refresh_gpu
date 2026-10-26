@@ -36,12 +36,3 @@ Useful en cas de freeze d'affichage, de glitchs visuels lors du lancement d'un j
 
 ---
 
-## ⚙️ Intégration dans vos scripts (Optionnel)
-
-Si vous souhaitez exécuter cette commande dans vos propres scripts Batch ou PowerShell :
-
-**En Batch (.bat) :**
-```cmd
-@echo off
-echo Réinitialisation du pilote graphique en cours...
-powershell -Command "(New-Object -ComObject WScript.Shell).SendKeys('^+%{b}')"
